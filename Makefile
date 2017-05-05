@@ -120,7 +120,7 @@ cf_upload: publish
 github: publish
 	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
 	
-	git push -f https://github.com/sbadillo/sbadillo.github.io.git origin master
+	git push -fq https://github.com/sbadillo/sbadillo.github.io.git master
 
 	#original :
 	# git push origin $(GITHUB_PAGES_BRANCH)
