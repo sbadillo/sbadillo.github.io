@@ -1,4 +1,5 @@
-check this! http://registry.jsonresume.org/
+Title: CV
+date: 2017-05-1
 
 ## Summary
 
