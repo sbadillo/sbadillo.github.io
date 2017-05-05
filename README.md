@@ -4,8 +4,9 @@ Source to create a static site using Github Pages, Pelican, and TravisCI
 
 ## Procedure:
 
-1. On **source**, content is written in Markdown or rest in content/
-all necessary files to build the site with Pelican are in **source** branch.
+1. On **source**, content is written in Markdown or rest in content/ folder.
+
+All necessary files to build the site with Pelican are in **source** branch.
 2. git push changes
 3. It's done! Travis CI will deploy the site to the **master** branch everytime a push is detected. Travis runs pelican and ghp-import.
 
