@@ -125,7 +125,3 @@ SMP | New Zealand | [Sept 2011 – Oct 2011]
 - Participated in conservation project for the Rarotoka Island and endandgered bird species. Departement of Conservation, New Zealand.
 - Helped middle-aged peope to complete their high school education. Served as a tutor and tutor manager. PrepaNET project, Sonora Mexico.
 - Built a community support model CONJUVE that was recognized and supported for its creation thanks to public funds. Sonora Leader Formation Program, Sonora Mexico.
-
----
-
-[Back to home](https://sbadillo.github.io/onWeb/)

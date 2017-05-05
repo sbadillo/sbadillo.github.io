@@ -6,7 +6,7 @@ AUTHOR = 'Sergio Badillo'
 SITENAME = 'SergioBadillo'
 SITEURL = ''
 
-THEME = 'themes/pure'
+# THEME = 'themes/pure'
 
 PATH = 'content'
 
