@@ -15,7 +15,6 @@ env:
 
 install:
 - pip install pelican
-- pip install -r requirements.txt
 - git clone https://github.com/getpelican/pelican-plugins
 script:
 - make publish github
