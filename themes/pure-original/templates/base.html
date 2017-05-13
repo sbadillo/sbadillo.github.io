@@ -26,34 +26,16 @@
     <link href="{{ SITEURL }}/{{ FAVICON }}" rel="icon">
     {% endif %}
 
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
-    
-    
-    <!-- responsive grids pure css, need to be added separately -->
 
-    <!--[if lte IE 8]>
-    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-old-ie-min.css">
-    <![endif]-->
-    <!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
-    <!--<![endif]-->
-
-    <!-- end adding responsive grids -->
-
-
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/side-menu.css">
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/styles.css">
-
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pure.css">
     {% block head_css %}{% endblock %}
 
-    <!-- Fonts here -->
-    <!-- End fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,500" rel="stylesheet" type="text/css">
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     {% block head_js %}{% endblock %}
-
-
 </head>
 
 <body>

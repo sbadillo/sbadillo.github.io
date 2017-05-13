@@ -1,10 +1,10 @@
-<div class="sidebar pure-u">
+<!-- <div class="sidebar pure-u">
     <div class="cover-img" style="background-image: url('{{ COVER_IMG_URL }}')">
         <div class="cover-body">
             <header class="header">
                 <hgroup>
                     <h1 class="brand-main"><a href="/">{{ SITENAME }}</a></h1>
-                    <p class="tagline">{{ TAGLINE }}</p>
+                    
                 {% for title, link in MENUITEMS %}
                     <p class="links"><a href="{{ link }}">{{ title }}</a></p>
                 {% endfor %}
@@ -20,3 +20,44 @@
         </div>
     </div>
 </div>
+ -->
+
+
+<!-- Menu toggle -->
+
+<a href="#menu" id="menuLink" class="menu-link">
+    <!-- Hamburger icon -->
+    <span></span>
+</a>
+
+
+
+<div id="menu">
+    
+    <div class="brand-main">
+        Sergio Badillo
+    </div>
+
+    <div class="pure-menu">
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item"><a href="/" class="pure-menu-link">Parcours</a></li>
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link pure-menu-child-1">. Architecture</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link pure-menu-child-1">. Identite Visuelle</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link pure-menu-child-1">. Danse</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link pure-menu-child-1">. Decouverte</a></li>
+            </ul>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">CV</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Prestations</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact</a></li>
+        </ul>
+
+
+
+        <!-- <p class="tagline">{{ TAGLINE }}</p> -->
+    </div>
+</div>
+
+
+
+<script src="theme/js/ui.js"></script>

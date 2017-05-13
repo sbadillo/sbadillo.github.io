@@ -9,3 +9,4 @@ colorama>=0.2.5
 oauth>=1.0.1
 pelican-gist>=0.3
 Jinja2>=2.8
+webassets
