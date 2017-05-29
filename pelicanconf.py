@@ -9,6 +9,9 @@ SITEURL = ''
 THEME = 'themes/notmyidea-cms'
 # THEME = 'themes/pure'
 
+PLUGIN_PATHS = ['./pelican-plugins/']
+PLUGINS = ["render_math"] 
+
 PATH = 'content'
 
 TIMEZONE = 'Europe/Paris'
