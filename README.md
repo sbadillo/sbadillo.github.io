@@ -1,6 +1,7 @@
 ## Description
 
 Source to create a static site using Github Pages, Pelican, and TravisCI
+![source build status](https://travis-ci.org/sbadillo/sbadillo.github.io.svg?branch=sources)
 
 ## Procedure:
 
