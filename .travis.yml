@@ -3,7 +3,6 @@ python:
   - "3.5"
 sudo: required
 
-
 notifications:
   email:
     recipients:
@@ -22,9 +21,9 @@ env:
 install:
 - pip install -r requirements.txt
 # - pip install ghp-import
-- git submodule add https://github.com/getpelican/pelican-plugins   
+- git submodule add https://github.com/getpelican/pelican-plugins pelican-plugins  
 script:
 
-- ls content
+- ls pelican-plugins/
 - make publish github
 
