@@ -22,7 +22,7 @@ env:
 install:
 - pip install -r requirements.txt
 # - pip install ghp-import
-- git submodule add https://github.com/getpelican/pelican-plugins pelican-plugins/  
+- git submodule add https://github.com/getpelican/pelican-plugins   
 script:
 
 - ls content
