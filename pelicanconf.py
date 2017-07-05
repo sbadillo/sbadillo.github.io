@@ -2,21 +2,23 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = 'Sergio Badillo'
+AUTHOR = 'SB'
 SITENAME = 'SergioBadillo'
 SITEURL = '' 
-
-THEME = 'themes/notmyidea-cms'
-# THEME = 'themes/pure'
-
-PLUGIN_PATHS = ['./pelican-plugins/']
-PLUGINS = ["render_math"] 
 
 PATH = 'content'
 
 TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = 'English'
+
+THEME = 'themes/notmyidea-cms'
+
+PLUGIN_PATHS = ['./pelican-plugins/']
+PLUGINS = ["render_math"] 
+
+TYPOGRIFY = True
+
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -49,5 +51,3 @@ EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'}
 }
 
-# Markup
-TYPOGRIFY = True
