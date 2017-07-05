@@ -1,1 +1,3 @@
 output/
+themes/sb-boot/src/node_modules
+themes/sb-boot/src/bower_components

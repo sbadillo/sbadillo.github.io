@@ -1,0 +1,21 @@
+{
+  "name": "sb-boot-templat",
+  "description": "template for own website",
+  "main": "index.html",
+  "authors": [
+    "sb"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/sbadillo",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "4"
+  },
+  "devDependencies": {}
+}
