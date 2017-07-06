@@ -1,19 +1,26 @@
+	window.onpopstate = function(e){
+		if(e.state){
+			document.getElementById("content").innerHTML = e.state.html;
+			document.title = e.state.pageTitle;
+		}
+	};
 
 $(document).ready(function() {
 	
-
+	// change active menu link and load content with ajax
 	$('nav a.nav-link').click(function(e) {
+
 		var $this = $(this);
-		// console.log('wololo');
-		console.log($this.attr('href'));
-
 		$this.siblings().removeClass('active').end().addClass('active');
-		e.preventDefault();
 
-    // Load the page content in to element
-    // with id #content using ajax (There are other ways)
-    $('section#base-main').load($this.attr('href') 'section');
-});
+    	// This is cool: loading page content 
+    	// into section#base-main element with ajax
+    	
+		e.preventDefault();  // this prevents default events and goes for ajax
+		var loadme = $this.attr('href') + ' ' + 'section#content';
+		console.log('ajax load --> '+ loadme);
+		$('section#base-main').load(loadme);
+	});
 
 	
 });

@@ -42,8 +42,8 @@ h6 a { color : inherit !important }
  * Override Bootstrap's default container.
  */
 
- .container {
-  max-width: 60rem;
+section#content .container {
+  max-width: 750px;
 }
 
 /*
@@ -190,16 +190,17 @@ header .container {
 section#content  {
   .card {
     padding:1rem;
-// card variables
-background-color:transparent;
-border: .1rem solid #edd;
-// border-radius: 0px;
+  // card variables
+  background-color:transparent;
+  border: thin solid #ccc;
+  border-top: .2rem solid #ccc;
+  // border-radius: 0px;
 }
 
 .img-thumbnail {
    
 background-color:transparent;
-border: .1rem dashed #edd;
+border: thin dashed #edd;
 // border-radius: 0px;
 }
 

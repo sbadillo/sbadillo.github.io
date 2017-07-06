@@ -39,8 +39,8 @@ h6 a {
 /*
  * Override Bootstrap's default container.
  */
-.container {
-  max-width: 60rem; }
+section#content .container {
+  max-width: 750px; }
 
 /*
  * Masthead for nav
@@ -154,11 +154,12 @@ header .container {
 section#content .card {
   padding: 1rem;
   background-color: transparent;
-  border: .1rem solid #edd; }
+  border: thin solid #ccc;
+  border-top: .2rem solid #ccc; }
 
 section#content .img-thumbnail {
   background-color: transparent;
-  border: .1rem dashed #edd; }
+  border: thin dashed #edd; }
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
