@@ -20,55 +20,52 @@
 
 <body>
 
-  <header>
+  <div class="fixed-top blog-masthead container-fluid">
+    <div class="container-fluid">
+      <nav class="nav blog-nav">   
+        <a class="nav-link active" href="{{ SITEURL }}/">Home</a>
 
-    <div class="blog-masthead container-fluid">
-      <div class="container-fluid">
-        <nav class="nav blog-nav">   
-          <a class="nav-link active" href="{{ SITEURL }}/">Home</a>
+        {% for title, link in MENUITEMS %}
 
-          {% for title, link in MENUITEMS %}
+        <a class="nav-link" href="{{ link }}">{{ title }}</a>
 
-          <a class="nav-link" href="{{ link }}">{{ title }}</a>
+        {% endfor %}
 
-          {% endfor %}
+        {% if DISPLAY_PAGES_ON_MENU %}
+        {% for p in pages %}
 
-          {% if DISPLAY_PAGES_ON_MENU %}
-          {% for p in pages %}
+        <a class="nav-link" {% if p == page %} class="active" {% endif %} href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
 
-          <a class="nav-link" {% if p == page %} class="active" {% endif %} href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
+        {% endfor %}
+        {% else %}
 
-          {% endfor %}
-          {% else %}
+        {% if DISPLAY_CATEGORIES_ON_MENU %}
+        {% for cat, null in categories %}
+        
+        <a  class="nav-link" {% if p == page %} class="active" {% endif %} href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a>
+        
+        {% endfor %}
+        {% endif %}
 
-          {% if DISPLAY_CATEGORIES_ON_MENU %}
-          {% for cat, null in categories %}
-          <a  class="nav-link" {% if p == page %} class="active" {% endif %} href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a>
-          {% endfor %}
-          {% endif %}
-
-          {% endif %}
-        </nav><!-- /#menu -->
-      </div>
+        {% endif %}
+      </nav><!-- /#menu -->
     </div>
-
+  </div>
+  
+  <header>
     <div class="banner container-fluid">
-
-
 
       <div class="container">
         <div class="site-name">{{ SITENAME }}
           <div class="lead subtitle">{{ AUTHOR }}</div>
         </div>
-        {# <img src="{{ SITEURL }}/images/ginseng-grow-1.png" alt=""> #}
-
+        {# <img class="img-fluid align-self-end text-right" src="{{ SITEURL }}/images/ginseng-grow-1.png"> #}
       </div>
     </div>
-
   </header>
 
   <section id="base-main" class="container-fluid">  
-  <!-- attention : ajax loads into this section section#base-main-->
+    <!-- attention : ajax loads into this section section#base-main-->
 
     {% block content %}
     {% endblock %}
@@ -83,10 +80,10 @@
     <script type="text/javascript" src="{{ SITEURL }}/theme/js/vendor.js"></script>
     <script type="text/javascript" src="{{ SITEURL }}/theme/js/own.js"></script>
 
-   {#  <address id="about" class="vcard body">
-      Powered by <a href="http://getpelican.com/">Pelican</a> and <a href="http://python.org">Python</a>
+    {#  <address id="about" class="vcard body">
+    Powered by <a href="http://getpelican.com/">Pelican</a> and <a href="http://python.org">Python</a>
 
-    </address><!-- /#about --> #}
-  </footer><!-- /#contentinfo -->
+  </address><!-- /#about --> #}
+</footer><!-- /#contentinfo -->
 </body>
 </html>

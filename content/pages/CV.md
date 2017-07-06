@@ -1,6 +1,6 @@
 Title: CV
 date: 2017-05-1
-<!-- status:hidden -->
+status:hidden
 
 ## Summary
 
