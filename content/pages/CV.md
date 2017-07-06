@@ -1,5 +1,6 @@
 Title: CV
 date: 2017-05-1
+status:hidden
 
 ## Summary
 
@@ -115,13 +116,3 @@ SMP | New Zealand | [Sept 2011 – Oct 2011]
 - Unix based systems
 
 
-<!-- ==============  NEXT SECTION: ============== -->
-<a name="Experience-as-Volunteer"></a>
-
----
-# Experience As Volunteer
-
-- Thaught general computer skills for people of remote communities. IDESS Project, Sonora Mexico.
-- Participated in conservation project for the Rarotoka Island and endandgered bird species. Departement of Conservation, New Zealand.
-- Helped middle-aged peope to complete their high school education. Served as a tutor and tutor manager. PrepaNET project, Sonora Mexico.
-- Built a community support model CONJUVE that was recognized and supported for its creation thanks to public funds. Sonora Leader Formation Program, Sonora Mexico.

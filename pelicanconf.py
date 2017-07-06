@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Sergio Badillo'
-SITENAME = 'This is not a portfolio'
+SITENAME = 'not a portfolio'
 SITEURL = '' 
 SITESUBTITLE = ""
 
@@ -29,13 +29,13 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+	('Python.org', 'http://python.org/'),
+	('Jinja2', 'http://jinja.pocoo.org/'),
+	('You can modify those links in your config file', '#'),)
 
 # Social widget
 SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+	('Another social link', '#'),)
 
 DEFAULT_PAGINATION = False
 
@@ -43,17 +43,24 @@ DEFAULT_PAGINATION = False
 #RELATIVE_URLS = True
 
 STATIC_PATHS = [
-    'images', 
-    'extra/favicon.ico'
+'images', 
+'extra/favicon.ico'
 ]
 
 EXTRA_PATH_METADATA = {
-    'extra/favicon.ico': {'path': 'favicon.ico'}
+'extra/favicon.ico': {'path': 'favicon.ico'}
 }
 
 
 # a Dummy menu
-MENUITEMS = (('Archives', '/archives.html'),
-             ('Categories', '/categories.html'),
-             ('Tags', '/tags.html'),)
+MENUITEMS = (('Blog', '/blog.html'),
+	('Categories', '/categories.html'))
+
+# workaround to have a blog kept separatelly:
+
+# 	home.html will be  -->  output/index.html
+# 	index.html will be -->  output/blog.html
+TEMPLATE_PAGES = {'home.html': 'index.html',}
+INDEX_SAVE_AS = "blog.html"
+
 

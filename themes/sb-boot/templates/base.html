@@ -9,93 +9,71 @@
   <!-- Ensure proper rending and touch zooming for all devices -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  {% if FEED_ALL_ATOM %}
-  <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
-  {% endif %}
-  {% if FEED_ALL_RSS %}
-  <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Full RSS Feed" />
-  {% endif %}
-  {% if FEED_ATOM %}
-  <link href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
-  {% endif %}
-  {% if FEED_RSS %}
-  <link href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
-  {% endif %}
-  {% if CATEGORY_FEED_ATOM and category %}
-  <link href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_ATOM|format(category.slug) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Categories Atom Feed" />
-  {% endif %}
-  {% if CATEGORY_FEED_RSS and category %}
-  <link href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_RSS|format(category.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Categories RSS Feed" />
-  {% endif %}
-  {% if TAG_FEED_ATOM and tag %}
-  <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM|format(tag.slug) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Tags Atom Feed" />
-  {% endif %}
-  {% if TAG_FEED_RSS and tag %}
-  <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Tags RSS Feed" />
-  {% endif %}
-  {% endblock head %}
-
   <!-- A google font -->
   <link href="https://fonts.googleapis.com/css?family=Vollkorn:400,400i,700" rel="stylesheet">
 
   <!-- latest concatenated css file -->
   <link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css">
+  {% endblock head %}
 
 </head>
 
 <body>
 
-  <div class="blog-masthead container-fluid">
-    <div class="container-fluid">
-      <nav class="nav blog-nav">   
-        <a class="nav-link active" href="{{ SITEURL }}/">Home</a>
-        
-        {% for title, link in MENUITEMS %}
+  <header>
 
-        <a class="nav-link" href="{{ link }}">{{ title }}</a>
+    <div class="blog-masthead container-fluid">
+      <div class="container-fluid">
+        <nav class="nav blog-nav">   
+          <a class="nav-link active" href="{{ SITEURL }}/">Home</a>
 
-        {% endfor %}
+          {% for title, link in MENUITEMS %}
 
-        {% if DISPLAY_PAGES_ON_MENU %}
-        {% for p in pages %}
+          <a class="nav-link" href="{{ link }}">{{ title }}</a>
 
-        <a class="nav-link" {% if p == page %} class="active" {% endif %} href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
+          {% endfor %}
 
-        {% endfor %}
-        {% else %}
+          {% if DISPLAY_PAGES_ON_MENU %}
+          {% for p in pages %}
 
-        {% if DISPLAY_CATEGORIES_ON_MENU %}
-        {% for cat, null in categories %}
-        <a  class="nav-link" {% if p == page %} class="active" {% endif %} href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a>
-        {% endfor %}
-        {% endif %}
+          <a class="nav-link" {% if p == page %} class="active" {% endif %} href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
 
-        {% endif %}
-      </nav><!-- /#menu -->
+          {% endfor %}
+          {% else %}
+
+          {% if DISPLAY_CATEGORIES_ON_MENU %}
+          {% for cat, null in categories %}
+          <a  class="nav-link" {% if p == page %} class="active" {% endif %} href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a>
+          {% endfor %}
+          {% endif %}
+
+          {% endif %}
+        </nav><!-- /#menu -->
+      </div>
     </div>
-  </div>
+
+    <div class="banner container-fluid">
 
 
-  <div class="blog-header">
-    <div class="container">
-      <div class="site-name">{{ SITENAME }}
-      <span class="lead subtitle">{{ AUTHOR }}</span></div>
+
+      <div class="container">
+        <div class="site-name">{{ SITENAME }}
+          <div class="lead subtitle">{{ AUTHOR }}</div>
+        </div>
+        {# <img src="{{ SITEURL }}/images/ginseng-grow-1.png" alt=""> #}
+
+      </div>
     </div>
-  </div>
 
+  </header>
 
-<div class="container">
-
-  <div class="row">
-
-    <col-sm-8 class="blog-main">
+  <section id="base-main" class="container-fluid">  
 
     {% block content %}
     {% endblock %}
-      
-    </col-sm-8>
-  </div>
-</div>
+
+  </section>
+
 
 
 
@@ -104,11 +82,10 @@
     <script type="text/javascript" src="{{ SITEURL }}/theme/js/vendor.js"></script>
     <script type="text/javascript" src="{{ SITEURL }}/theme/js/own.js"></script>
 
-
-    <address id="about" class="vcard body">
+   {#  <address id="about" class="vcard body">
       Powered by <a href="http://getpelican.com/">Pelican</a> and <a href="http://python.org">Python</a>
 
-    </address><!-- /#about -->
+    </address><!-- /#about --> #}
   </footer><!-- /#contentinfo -->
 </body>
 </html>
