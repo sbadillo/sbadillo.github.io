@@ -42,6 +42,9 @@ h6 a {
 section#content .container {
   max-width: 750px; }
 
+section#content .container.container-blog-index {
+  max-width: 800px; }
+
 /*
  * Masthead for nav
  */

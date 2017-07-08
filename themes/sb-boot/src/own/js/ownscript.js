@@ -1,8 +1,12 @@
+$( document ).click(function() {
+	console.log('weeee');
+	$( ".toggle" ).toggle( "drop" );
+});
 
 
 
 $(document).ready(function() {
-	
+
 	// 	if arriving to other than /index.html,
 	//	assign active to active path
 
@@ -25,7 +29,7 @@ $(document).ready(function() {
 
 		var $this = $(this);
 		$this.siblings().removeClass('active').end().addClass('active');
-    	
+
     	// 2.
 
 		e.preventDefault();  // this prevents default events and goes for ajax
