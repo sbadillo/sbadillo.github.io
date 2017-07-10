@@ -15,6 +15,7 @@ DEFAULT_LANG = 'English'
 
 THEME = 'themes/sb-boot'
 
+
 PLUGIN_PATHS = ['./pelican-plugins/']
 PLUGINS = ["render_math"] 
 
@@ -52,15 +53,17 @@ EXTRA_PATH_METADATA = {
 }
 
 
-# a Dummy menu
 MENUITEMS = (('Blog', '/blog.html'),
-	('Categories', '/categories.html'))
+	# ('Categories', '/categories.html'),
+	)
 
 # workaround to have a blog kept separatelly:
-
 # 	home.html will be  -->  output/index.html
 # 	index.html will be -->  output/blog.html
 TEMPLATE_PAGES = {'home.html': 'index.html',}
 INDEX_SAVE_AS = "blog.html"
 
 
+ARTICLE_URL = 'blog/{slug}.html'
+ARTICLE_SAVE_AS = 'blog/{slug}.html'
+SUMMARY_MAX_LENGTH = 15

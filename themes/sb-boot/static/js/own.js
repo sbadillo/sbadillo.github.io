@@ -1,27 +1,29 @@
-$( document ).click(function() {
-	console.log('weeee');
-	$( ".toggle" ).toggle( "drop" );
-});
-
-
-
 $(document).ready(function() {
 
 	// 	if arriving to other than /index.html,
-	//	assign active to active path
+	//	assign class="active" to active path
 
 	$('nav a.nav-link').each(function(){
 		var path = $(this).attr('href');
-		if (path == window.location.pathname) {
-			console.log('we landed in: ' + path );
+		var location = window.location.pathname.toString();
+		var pathName = $(this).text().toString().toLowerCase();
+
+		// check if we are in one of the main menu items...
+		if (path == location) {
 			$(this).siblings().removeClass('active').end().addClass('active');
 		}
+
+		// else check if we are inside a major section (i.e. blog)
+		else if (location.indexOf(pathName) !== -1) {
+			console.log('somewhere inside ', pathName);
+			$(this).siblings().removeClass('active').end().addClass('active');
+		}
+
 	});
 
-
-
-	// on click on menu: 	1. change active menu link 
-	// 						2. load page content with ajax
+	// on click on menu: 	
+	// 		1. change active menu link 
+	// 		2. load page content with ajax
 
 	$('nav a.nav-link').click(function(e) {
 
@@ -39,10 +41,7 @@ $(document).ready(function() {
 		$('section#base-main').load(loadsection);
 
 		window.history.pushState("object or string", "Title", loadurl);
-
 	});
-
-
 });
 
 

@@ -24,9 +24,10 @@ $rojo-chido: 			#A31621;
 }
 
 body {
-	background: url('../papelculei.jpg');
+	background: url('../papelculei-croped.jpg');
   background-position: top;
 }
+
 
 // no colors in title links
 h1 a { color : inherit !important }
@@ -36,16 +37,11 @@ h4 a { color : inherit !important }
 h5 a { color : inherit !important }
 h6 a { color : inherit !important }
 
-
 /*
  * Override Bootstrap's default container.
  */
  section#content .container {
   max-width: 750px;
-}
-
-section#content .container.container-blog-index {
-  max-width: 800px;
 }
 
 /*
@@ -167,7 +163,6 @@ section#base-main {
 /*
  * Footer
  */
-
  .blog-footer {
   padding: 2.5rem 0;
   color: #999;
@@ -175,14 +170,10 @@ section#base-main {
   background-color: #f9f9f9;
   border-top: .05rem solid #e5e5e5;
 }
+
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
-
-footer {
-  height:2rem;
-}
-
 
 header .container {
   padding-left:0;
@@ -216,3 +207,6 @@ section#content  {
 .bg-transparent {
   background-color: transparent !important;
 }
+
+
+

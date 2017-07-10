@@ -2,8 +2,6 @@ Title: Getting started with grid connected PV
 date: 2017-05-29
 status: draft
 
-# Intro
-
 Grid-connected PV systems can be divided: 
 
 * Grid-connected with no battery backup (Also called 'straight grid-connected')

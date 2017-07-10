@@ -23,7 +23,7 @@
   <div class="fixed-top blog-masthead container-fluid">
     <div class="container-fluid">
       <nav class="nav blog-nav">   
-        <a class="nav-link active" href="{{ SITEURL }}/">Home</a>
+        <a class="nav-link" href="{{ SITEURL }}/">Home</a>
 
         {% for title, link in MENUITEMS %}
 
@@ -75,15 +75,13 @@
 
 
 
-  <footer id="contentinfo" class="body">
-
+  <footer id="contentinfo" class= "body">
+    
+    {# Load scripts #}
     <script type="text/javascript" src="{{ SITEURL }}/theme/js/vendor.js"></script>
     <script type="text/javascript" src="{{ SITEURL }}/theme/js/own.js"></script>
 
-    {#  <address id="about" class="vcard body">
-    Powered by <a href="http://getpelican.com/">Pelican</a> and <a href="http://python.org">Python</a>
+  </footer><!-- /#contentinfo -->
 
-  </address><!-- /#about --> #}
-</footer><!-- /#contentinfo -->
 </body>
 </html>

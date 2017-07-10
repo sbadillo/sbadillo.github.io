@@ -15,7 +15,7 @@
     font-size: 18px; } }
 
 body {
-  background: url("../papelculei.jpg");
+  background: url("../papelculei-croped.jpg");
   background-position: top; }
 
 h1 a {
@@ -41,9 +41,6 @@ h6 a {
  */
 section#content .container {
   max-width: 750px; }
-
-section#content .container.container-blog-index {
-  max-width: 800px; }
 
 /*
  * Masthead for nav
@@ -148,9 +145,6 @@ section#base-main {
 
 .blog-footer p:last-child {
   margin-bottom: 0; }
-
-footer {
-  height: 2rem; }
 
 header .container {
   padding-left: 0; }
