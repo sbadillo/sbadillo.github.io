@@ -42,7 +42,20 @@ $(document).ready(function() {
 
 		window.history.pushState("object or string", "Title", loadurl);
 	});
-});
+
+
+	// start typed.js animationn
+	var typed = new Typed('#typed', {
+		// most timing parameters in miliseconds.
+		stringsElement: '#typed-strings',
+		typeSpeed : 40,
+		startDelay : 500,
+		backSpeed : 30
+
+	});
+
+	});
+
 
 
 
