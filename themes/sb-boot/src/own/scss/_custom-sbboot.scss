@@ -40,8 +40,16 @@ h6 a { color : inherit !important }
 /*
  * Override Bootstrap's default container.
  */
- section#content .container {
+header .container {
   max-width: 750px;
+}
+
+section#content .container {
+  max-width: 750px;
+}
+
+section#content {
+  margin-top: 3rem;
 }
 
 /*

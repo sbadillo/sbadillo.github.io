@@ -39,8 +39,14 @@ h6 a {
 /*
  * Override Bootstrap's default container.
  */
+header .container {
+  max-width: 750px; }
+
 section#content .container {
   max-width: 750px; }
+
+section#content {
+  margin-top: 3rem; }
 
 /*
  * Masthead for nav
