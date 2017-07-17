@@ -17,5 +17,7 @@
   "dependencies": {
     "bootstrap": "4"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "typed.js": "^2.0.5"
+  }
 }

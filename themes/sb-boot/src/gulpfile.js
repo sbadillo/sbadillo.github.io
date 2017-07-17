@@ -31,8 +31,8 @@ var staticDir = '../static';
 gulp.task('copy-vendor-files', function(cb) {
 
   // copy vendor js files
-  var js_vendor = gulp.src(mainBowerFiles('**/*.js'))
-  .pipe(debug({title:'concat to vendor.js:', showFiles:false}))
+  var js_vendor = gulp.src(mainBowerFiles('**/*.js', {includeDev:'mixed'} ))
+  .pipe(debug({title:'concat to vendor.js:', showFiles:true}))
   .pipe(concat('vendor.js'))
   .pipe(gulp.dest(staticDir + '/js/'));
 
