@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Sergio Badillo'
-SITENAME = 'not a portfolio'
+SITENAME = "Log"
 SITEURL = '' 
 SITESUBTITLE = ""
 
@@ -66,4 +66,4 @@ INDEX_SAVE_AS = "blog.html"
 
 ARTICLE_URL = 'blog/{slug}.html'
 ARTICLE_SAVE_AS = 'blog/{slug}.html'
-SUMMARY_MAX_LENGTH = 15
+SUMMARY_MAX_LENGTH = 20

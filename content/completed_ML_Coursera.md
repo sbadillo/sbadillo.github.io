@@ -1,4 +1,4 @@
-title: Completed Andrew Ng's Machine Learning course
+title: Andrew Ng's Machine Learning course
 date: 2017-05-26
 status: published
 
