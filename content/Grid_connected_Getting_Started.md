@@ -1,6 +1,6 @@
 Title: Getting started with grid connected PV
 date: 2017-05-29
-status: draft
+<!-- status: draft -->
 
 Grid-connected PV systems can be divided: 
 

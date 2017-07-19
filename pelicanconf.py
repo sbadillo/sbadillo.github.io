@@ -15,9 +15,9 @@ DEFAULT_LANG = 'English'
 
 THEME = 'themes/sb-boot'
 
-
-PLUGIN_PATHS = ['./pelican-plugins/']
-PLUGINS = ["render_math"] 
+PLUGIN_PATHS = ['./pelican-plugins/', 
+				'./pelican-plugins/encrypt-content/encrypt_content/']
+PLUGINS = ['encrypt_content', 'render_math'] 
 
 TYPOGRIFY = True
 
@@ -67,3 +67,8 @@ INDEX_SAVE_AS = "blog.html"
 ARTICLE_URL = 'blog/{slug}.html'
 ARTICLE_SAVE_AS = 'blog/{slug}.html'
 SUMMARY_MAX_LENGTH = 20
+
+ENCRYPT_CONTENT = {
+    'title_prefix': '[Private]',
+    'summary': 'This content is encrypted.'
+}
