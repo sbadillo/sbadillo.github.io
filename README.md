@@ -18,6 +18,8 @@ Source to create a static site using Github Pages, Pelican, and TravisCI
 * Needed to add a requirements.txt file with pelican, ghp-import, etc.
 * See .travis.yml to see what Travis is doing
 * Modified Makefile on this part:
+* remember to git submodule update --init --recursive after adding the pelicans-plugins as a submodule
+
 
 ```
 github: publish    

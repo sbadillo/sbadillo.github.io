@@ -2,6 +2,7 @@ title: Does it makes sense?
 date: 2017-07-19
 category: Solar
 status: published
+summary: Does solar energy makes sense?
 
 So I would like to start the solar energy series by answering in a simple way one of the questions I often hear myself. Isn't producing a solar cells as harmful as burning fuels?
 

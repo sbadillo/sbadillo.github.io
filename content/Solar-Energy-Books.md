@@ -1,5 +1,6 @@
 Title: Books Solar Energy
 Date: 2017-05-17
+summary: Some interesting sources out there.
 
 Some interesting sources out there.
 

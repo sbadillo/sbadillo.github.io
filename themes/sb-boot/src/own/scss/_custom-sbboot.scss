@@ -5,12 +5,57 @@
 
 // Fonts overrides
 
-$font-family-serif:      "Vollkorn", Georgia, serif ;
-$font-family-base:       $font-family-serif ;
+$font-family-sans-serif:      'PT Sans', sans-serif;
+$font-family-serif:           'Vollkorn', serif ;
+
+$font-family-base:            $font-family-serif ;
+$headings-font-family:   $font-family-sans-serif;
+
+$headings-margin-bottom: 1.2rem ;
+$headings-font-weight:   800 !default;
+
+$headings-line-height:   1.1 !default;
+$headings-color:         inherit !default;
+
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:   1.25rem !default;
+$font-size-sm:   .875rem !default;
+$font-size-xs:   .75rem !default;
+
+$font-weight-normal: normal ;
+$font-weight-bold: bold;
+
+$font-weight-base: $font-weight-normal;
+$line-height-base: 1.5 !default;
+
+$font-size-h1: 4rem;
+$font-size-h2: 1.5rem;
+$font-size-h3: 1.2rem;
+$font-size-h4: 1rem;
+
+$lead-font-size:   1.25rem !default;
+$lead-font-weight: 300 !default;
+
+
+h2 { 
+  margin-top: 2.5rem !important;
+  font-weight : 700 !important;
+}
+
+h3 { 
+  margin-top: 1rem !important;
+  // font-weight : 700 !important;
+}
+
+h4 { 
+  font-weight : 700 !important;
+}
+
 
 // paleta
 
 $rojo-chido: 			#A31621;
+$body-color:      #333;
 
 
 /*
@@ -18,34 +63,36 @@ $rojo-chido: 			#A31621;
  */
 
  @media (min-width: 48em) {
-  html {
-    font-size: 18px;
-  }
+  html { font-size: 18px; }
+  #content h1 {font-size: inherit !important; }
 }
 
 body {
-	background: url('../papelculei-croped.jpg');
+	// background: url('../papelculei-croped.jpg');
   background-position: top;
+  color: #333;
 }
 
 
 // no colors in title links
-h1 a { color : inherit !important }
-h2 a { color : inherit !important }
-h3 a { color : inherit !important }
-h4 a { color : inherit !important }
-h5 a { color : inherit !important }
-h6 a { color : inherit !important }
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a { 
+  color : inherit !important 
+}
 
 /*
  * Override Bootstrap's default container.
  */
 header .container {
-  max-width: 750px;
+  max-width: 960px;
 }
 
 section#content .container {
-  max-width: 750px;
+  max-width: 960px;
 }
 
 section#content {
@@ -167,6 +214,9 @@ section#base-main {
   color: #999;
 }
 
+.post-info {
+  font-family: $font-family-sans-serif;
+}
 
 /*
  * Footer
