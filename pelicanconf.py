@@ -12,12 +12,14 @@ PATH = 'content'
 TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = 'English'
+DEFAULT_DATE_FORMAT = '%d %B %Y'	
 
 THEME = 'themes/sb-boot'
 
 PLUGIN_PATHS = ['./pelican-plugins/', 
 				'./pelican-plugins/encrypt-content/encrypt_content/']
 PLUGINS = ['encrypt_content', 'render_math'] 
+
 
 TYPOGRIFY = True
 

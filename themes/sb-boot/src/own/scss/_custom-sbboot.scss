@@ -11,12 +11,11 @@ $rojo-chido-ito-ito:  #d9534f;
 $body-color:          #333 !important;
 
 
-
 // Fonts overrides
 
 $font-family-sans-serif:      'PT Sans', sans-serif;
 $font-family-serif:           'Vollkorn', serif ;
-// $font-family-serif:           'PT Serif', serif ;
+$font-family-monospace:       'Ubuntu Mono', monospace;
 
 
 $font-family-base:            $font-family-serif ;
@@ -48,6 +47,8 @@ $font-size-h4: 1rem;
 $lead-font-size:   1.25rem !default;
 $lead-font-weight: 300 !default;
 
+$code-font-size:              80%;
+
 
 // solves h1 too big for small devices
 @media screen and (max-width: 576px) {
@@ -69,7 +70,7 @@ h2 {
 }
 
 h3 { 
-  margin-top: 2rem !important;
+  margin-top: 1.2rem !important;
   margin-bottom: 1.2rem !important; 
 }
 
@@ -277,7 +278,7 @@ section#content  {
 .hashy-titles {
   color: $rojo-chido-ito-ito;
   position: absolute;
-  left:-2%;
+  left:-0.5rem;
 }
 
 
@@ -292,4 +293,16 @@ section#content  {
 
 .text-rojo-chido-ito-ito {
   color: $rojo-chido-ito-ito !important;
+}
+
+
+//Code 
+.highlight pre {
+  border-left:  thick solid $rojo-chido-ito-ito;
+  padding-left: 1rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  margin-top: 2rem; 
+  margin-bottom: 2rem; 
+  margin-left: - 1rem;
 }
