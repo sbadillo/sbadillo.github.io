@@ -6,9 +6,9 @@ summary: Does solar energy makes sense?
 
 So I would like to start the solar energy series by answering in a simple way one of the questions I often hear myself. Isn't producing a solar cells as harmful as burning fuels?
 
-To answer the question, we will start by looking at a very simple concept called **Net Energy**, and comparing different sources of energy.
+To answer the question, we will start by looking at a very simple concept called *Net Energy*, and comparing different sources of energy.
 
-#### Net Energy
+## Net Energy
 
 Almost all energy sources, are not usable in their natural form. Take oil for example, before it can be delivered to our homes as electrical energy, it will have undergo an exploitation process. This exploitation process will include several stages needed to transform the source of energy to a usable form of energy. 
 
@@ -31,11 +31,12 @@ We are not gonna dive into the numbers here, but hopefully you can get the idea.
 
 From this simplistic point of view, we might wonder if that even makes sense to burn oil.
 
-Net energy was introduced by Odum and Odum in 1976. The idea proposed that everything has an energy content, and introduced the *British thermal unit (BTU)* in order to measure and compare it.
+Net energy was introduced by Odum and Odum in 1976. The idea proposed that everything has an energy content, and introduced the *British thermal unit* (BTU) in order to measure and compare it.
 
-Similarly, **producing solar photovoltaic cells** requires a significant amount of energy. But, over its lifetime, the solar cell will produce more energy than the energy required to create the cell itself. Using the sun as *infinite* resource, the cell will create enough energy to compensate its own production energy costs, its own disposal costs, and still end-up with a positive energy balance. 
+### What about solar cells ?
 
-#### So what makes a energy form «sustainable» ?
+Producing solar photovoltaic cells requires a significant amount of energy. But, over its lifetime, the solar cell will produce more energy than the energy required to create the cell itself. Using the sun as *infinite* resource, the cell will create enough energy to compensate its own production energy costs, its own disposal costs, and still end-up with a positive energy balance. 
+
 
 We should judge forms of energy by two criteria:
 

@@ -3,10 +3,21 @@
 // Copy variables from `_variables.scss` to this file to override default values
 // without modifying source files.
 
+// Colors:
+
+$rojo-chido:          #A31621;
+$rojo-chido-ito:      #c9302c;
+$rojo-chido-ito-ito:  #d9534f;
+$body-color:          #333 !important;
+
+
+
 // Fonts overrides
 
 $font-family-sans-serif:      'PT Sans', sans-serif;
 $font-family-serif:           'Vollkorn', serif ;
+// $font-family-serif:           'PT Serif', serif ;
+
 
 $font-family-base:            $font-family-serif ;
 $font-family-site-title:      $font-family-serif;
@@ -31,7 +42,7 @@ $line-height-base: 1.5 !default;
 
 $font-size-h1: 4rem;
 $font-size-h2: 1.5rem;
-$font-size-h3: 1.2rem;
+$font-size-h3: 1.3rem;
 $font-size-h4: 1rem;
 
 $lead-font-size:   1.25rem !default;
@@ -58,20 +69,19 @@ h2 {
 }
 
 h3 { 
-  margin-top: 1.5rem !important;
-  margin-bottom: 0.5rem !important; 
+  margin-top: 2rem !important;
+  margin-bottom: 1.2rem !important; 
 }
 
-h4 { 
-  margin-top: 1.5rem !important;
-  margin-bottom: 0.5rem !important; 
+// no colors in title links
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a { 
+  // color : inherit !important ;
 }
-
-// paleta
-
-$rojo-chido: 			#A31621;
-$body-color:      #222 !important;
-
 
 /*
  * Globals
@@ -82,21 +92,11 @@ $body-color:      #222 !important;
 }
 
 body {
-	// background: url('../papelculei-croped.jpg');
+  // background: url('../papelculei-croped.jpg');
   background-position: top;
   color: #333;
 }
 
-
-// no colors in title links
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a { 
-  // color : inherit !important 
-}
 
 /*
  * Override Bootstrap's default container.
@@ -128,11 +128,11 @@ nav .nav-link {
   position: relative;
   padding: 1rem;
   font-weight: 500;
-  color: #cdddeb;
+  color: #fff;
 }
 nav .nav-link:hover,
 .nav-link:focus {
-  color: #fff;
+  color: $rojo-chido-ito-ito;
   background-color: transparent;
 }
 
@@ -257,24 +257,28 @@ header .container {
 section#content  {
   .card {
     padding:1rem;
-  // card variables
-  background-color:transparent;
-  border: thin solid #ccc;
-  border-top: .2rem solid #ccc;
-  // border-radius: 0px;
-}
-
-.img-thumbnail {
-
-  background-color:transparent;
-  border: thin dashed #edd;
-// border-radius: 0px;
+    background-color:transparent;
+    border: thin solid #ccc;
+    border-top: .2rem solid #ccc;
+  }
+  .img-thumbnail {
+    background-color:transparent;
+    border: thin dashed #edd;
+    // border-radius: 0px;
+  }
 }
 
 
+
+
+
+//accesories
+
+.hashy-titles {
+  color: $rojo-chido-ito-ito;
+  position: absolute;
+  left:-2%;
 }
-
-
 
 
 // custom quicktags:
@@ -282,5 +286,10 @@ section#content  {
   background-color: transparent !important;
 }
 
+.text-rojo-chido-ito {
+  color: $rojo-chido-ito !important;
+}
 
-
+.text-rojo-chido-ito-ito {
+  color: $rojo-chido-ito-ito !important;
+}

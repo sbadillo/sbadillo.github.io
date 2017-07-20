@@ -12,7 +12,7 @@
 
       <div class="col-md-8 toggle">
         {% block content_title %}
-        {# <h1 class="display-1">All articles</h1> #}
+        {# <h1 class="">All articles</h1> #}
         {% endblock %}
 
         <ol id="post-list" class="list-unstyled">
@@ -20,8 +20,8 @@
           <li class="">
             <article class="hentry">
               <header> 
-                <h3 class="entry-title">
-                  <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
+                <h3 class="entry-title mb-3">
+                  <a class="text-rojo-chido-ito-ito" href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
                 </h3> 
               </header>
               

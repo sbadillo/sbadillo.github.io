@@ -23,12 +23,8 @@ h2 {
   font-weight: 700 !important; }
 
 h3 {
-  margin-top: 1.5rem !important;
-  margin-bottom: 0.5rem !important; }
-
-h4 {
-  margin-top: 1.5rem !important;
-  margin-bottom: 0.5rem !important; }
+  margin-top: 2rem !important;
+  margin-bottom: 1.2rem !important; }
 
 /*
  * Globals
@@ -66,11 +62,11 @@ nav .nav-link {
   position: relative;
   padding: 1rem;
   font-weight: 500;
-  color: #cdddeb; }
+  color: #fff; }
 
 nav .nav-link:hover,
 .nav-link:focus {
-  color: #fff;
+  color: #d9534f;
   background-color: transparent; }
 
 nav .nav-link.active {
@@ -173,8 +169,19 @@ section#content .img-thumbnail {
   background-color: transparent;
   border: thin dashed #edd; }
 
+.hashy-titles {
+  color: #d9534f;
+  position: absolute;
+  left: -2%; }
+
 .bg-transparent {
   background-color: transparent !important; }
+
+.text-rojo-chido-ito {
+  color: #c9302c !important; }
+
+.text-rojo-chido-ito-ito {
+  color: #d9534f !important; }
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
@@ -444,7 +451,7 @@ body {
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
-  color: #222 !important;
+  color: #333 !important;
   background-color: #fff; }
 
 [tabindex="-1"]:focus {
@@ -609,7 +616,7 @@ h2, .h2 {
   font-size: 1.5rem; }
 
 h3, .h3 {
-  font-size: 1.2rem; }
+  font-size: 1.3rem; }
 
 h4, .h4 {
   font-size: 1rem; }
@@ -2277,7 +2284,7 @@ tbody.collapse.show {
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
-  color: #222 !important;
+  color: #333 !important;
   text-align: left;
   list-style: none;
   background-color: #fff;

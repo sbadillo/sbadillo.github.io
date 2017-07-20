@@ -1,5 +1,16 @@
 $(document).ready(function() {
 
+	// --------------
+	// esthetics: 
+
+	// add a hash symbol to all h2 titles.
+	$('h2').each(function() {
+		$(this).html("<span class='hashy-titles'># </span>" + $(this).html());
+	});
+
+
+	//  ----------------
+	//  functional
 	// 	if arriving to other than /index.html,
 	//	assign class="active" to active path
 
@@ -54,8 +65,8 @@ $(document).ready(function() {
 
 	});
 
-	});
 
+});
 
 
 
