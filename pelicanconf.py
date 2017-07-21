@@ -18,7 +18,7 @@ THEME = 'themes/sb-boot'
 
 PLUGIN_PATHS = ['./pelican-plugins/', 
 				'./pelican-plugins/encrypt-content/encrypt_content/']
-PLUGINS = ['encrypt_content', 'render_math'] 
+PLUGINS = ['encrypt_content', 'render_math', 'bootstrapify'] 
 
 
 TYPOGRIFY = True

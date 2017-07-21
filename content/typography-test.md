@@ -64,3 +64,12 @@ Hey what about putting something in that whitespace to the right. Is it possible
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam nemo laudantium, tempore earum incidunt temporibus eum, blanditiis quisquam dolorem maxime aperiam suscipit illum! Dolorum, officiis, possimus. Maxime repellendus ex debitis!
 
 
+## Tables and stuff
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi dolore  perspiciatis distinctio dolorum voluptas accusantium minus rerum non. Soluta.
+
+| Tables   |      Are      |  Cool |
+|----------|:-------------:|------:|
+| col 1 is |  left-aligned | $1600 |
+| col 2 is |    centered   |   $12 |
+| col 3 is | right-aligned |    $1 |

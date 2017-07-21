@@ -192,6 +192,16 @@ section#content .img-thumbnail {
   margin-bottom: 2rem;
   margin-left: -1rem; }
 
+#typed,
+.typed-cursor {
+  font-size: 1.5rem; }
+
+blockquote {
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  border-left: 0.25rem solid #eceeef; }
+
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;

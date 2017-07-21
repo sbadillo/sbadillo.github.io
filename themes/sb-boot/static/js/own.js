@@ -35,6 +35,7 @@ $(document).ready(function() {
 	// on click on menu: 	
 	// 		1. change active menu link 
 	// 		2. load page content with ajax
+	//		3. if coming back to index, wait and rerun typed fumction
 
 	$('nav a.nav-link').click(function(e) {
 
@@ -52,21 +53,32 @@ $(document).ready(function() {
 		$('section#base-main').load(loadsection);
 
 		window.history.pushState("object or string", "Title", loadurl);
+
+		// 3. 
+
+		if (loadurl == '/' ) {
+			setTimeout(function(){
+				typed();
+			}, 1500);		
+		}
 	});
 
-
-	// start typed.js animationn
-	var typed = new Typed('#typed', {
-		// most timing parameters in miliseconds.
-		stringsElement: '#typed-strings',
-		typeSpeed : 40,
-		startDelay : 500,
-		backSpeed : 30
-
-	});
-
+	typed();
 
 });
 
+
+function typed() {
+	var typed = new Typed('#typed', {
+		// most timing parameters in miliseconds.
+		// stringsElement: '#typed-strings',
+		strings: ['Hi there', 'Hi, I am Sergio.'],
+		typeSpeed : 50,
+		startDelay : 1000,
+		backSpeed : 40,
+		backDelay: 1000  // default: 700
+		// fadeOut: true
+	});
+};
 
 

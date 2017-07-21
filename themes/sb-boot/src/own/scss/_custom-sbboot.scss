@@ -49,6 +49,11 @@ $lead-font-weight: 300 !default;
 
 $code-font-size:              80%;
 
+// blockquoutes
+$blockquote-small-color:  $gray-light !default;
+$blockquote-font-size:    ($font-size-base * 1.25) !default;
+$blockquote-border-color: $gray-lighter !default;
+$blockquote-border-width: .25rem !default;
 
 // solves h1 too big for small devices
 @media screen and (max-width: 576px) {
@@ -296,7 +301,7 @@ section#content  {
 }
 
 
-//Code 
+// Code 
 .highlight pre {
   border-left:  thick solid $rojo-chido-ito-ito;
   padding-left: 1rem;
@@ -306,3 +311,23 @@ section#content  {
   margin-bottom: 2rem; 
   margin-left: - 1rem;
 }
+
+
+// Home
+#typed,
+.typed-cursor {
+  font-size: 1.5rem;
+}
+
+
+// Blockquotes
+
+// Blockquotes tags are treated as bootstrap quote classes:
+
+blockquote {
+  padding: ($spacer / 2) $spacer;
+  margin-bottom: $spacer;
+  font-size: $blockquote-font-size;
+  border-left: $blockquote-border-width solid $blockquote-border-color;
+}
+

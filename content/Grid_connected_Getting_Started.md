@@ -14,9 +14,10 @@ Grid-connected PV systems can be divided:
 The most commonly installed systems are grid-connected systems. We will
 focus on this type of system for now.
 
-### Applicable Codes and Standards (In France/Europe)
+## Applicable Codes and Standards (In France/Europe)
 
 Coming soon.
+
 We are looking here for general guidelines and requirements that
 guarantee safety of the end user, installer and maintenance technician. 
 
@@ -32,14 +33,15 @@ guarantee safety of the end user, installer and maintenance technician.
     * Electromagnetic Interference
     * Surge Protection
 
-# Design Considerations
+## Design Considerations
+
 Ok let's jump straight determining the system energy output.
 
 Depending on the type of PV modules we will get certain module efficiency $\eta$ ranging from 6% to 20%. We can calculate a very vague approximation by utilizing an irradiance value at Standard Test Conditions (I_STC), which corresponds to a value of 1000W/m2. Our approximation starts at $\eta * 1000 W/m^2$.
 
 Lets consider we can get some modules with 12% rated efficiency. This means that each square meter of PV module will be generating 120 Watts, only of course if the modules will be operating all the time at standard test conditions and at their maximum power points. So for this example, if we would like to generate 10kW of power, we will require 10,0000W/(.12*1000W/m2) = 83.33m2 of PV area.
 
->Good things to know: What is a typical space available in a south-facing rooftop of a typical west-Europe dwelling?
+*Good things to know*: What is a typical space available in a south-facing rooftop of a typical west-Europe dwelling?
 
 Until now, we have been talking about power (Watts), that is the instantaneous output of our system. Lets now talk **energy**. We will like to know how any kilowatts-hours can the system be expected to generate. To answer that question we will have to go through some important factors what will help us understand what will be the conversion efficiency of our system.
 
