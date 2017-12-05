@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Explain to self - misc</title><link href="/" rel="alternate"></link><link href="/feeds/misc.atom.xml" rel="self"></link><id>/</id><updated>2017-07-20T00:00:00+02:00</updated><entry><title>Typography Test</title><link href="/blog/typography-test.html" rel="alternate"></link><published>2017-07-19T00:00:00+02:00</published><updated>2017-07-20T00:00:00+02:00</updated><author><name>Sergio Badillo</name></author><id>tag:None,2017-07-19:/blog/typography-test.html</id><summary type="html">&lt;p&gt;Testing this site&amp;nbsp;typography&lt;/p&gt;</summary><content type="html">&lt;p&gt;Notes to self on getting the content right. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, ex corporis, maxime tempore eos veniam illo, ducimus quia rem, velit incidunt. Nemo dignissimos dicta repudiandae! Corporis exercitationem accusamus quas&amp;nbsp;excepturi!&lt;/p&gt;
+&lt;h2&gt;Topic&amp;nbsp;1&lt;/h2&gt;
+&lt;p&gt;So let&amp;#8217;s say we are writing an article with subdivisions. I would like to keep things simple so it is important not to use to many headers, as the reader can easily get discouraged by&amp;nbsp;complexity.&lt;/p&gt;
+&lt;p&gt;A list&amp;nbsp;example:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Clean, lots white spaces on headers to make them&amp;nbsp;clean&lt;/li&gt;
+&lt;li&gt;Minimize number of subdivision. Max 2 header&amp;nbsp;levels&lt;/li&gt;
+&lt;li&gt;Use other formats instead of headers, like lists started by&amp;nbsp;bolds.&lt;/li&gt;
+&lt;li&gt;Figures managed via&amp;nbsp;bootstrap&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Topic&amp;nbsp;dos&lt;/h2&gt;
+&lt;p&gt;I will try to keep division up to this level. The main division of the article will be in h2&amp;nbsp;headers.&lt;/p&gt;
+&lt;h3&gt;2.1&amp;nbsp;Subtopic&lt;/h3&gt;
+&lt;p&gt;If more detail is needed. Then I can use another subdivision like this, this is an h3. Id fugiat assumenda consectetur a cupiditate accusantium quibusdam inventore perspiciatis! Maybe we drop a small figure&amp;nbsp;here:&lt;/p&gt;
+&lt;figure class="figure" style="max-width: 200px;"&gt;
+    &lt;img class="figure-img img-fluid" src="../images/american-colombo.jpg"&gt;
+    &lt;div class="figure-caption text-center"&gt;American Colombo&lt;/div&gt;
+&lt;/figure&gt;
+
+&lt;h3&gt;2.2&amp;nbsp;Subtopic&lt;/h3&gt;
+&lt;p&gt;This is another h3 subdivision. Let&amp;#8217;s add a quote over&amp;nbsp;here.&lt;/p&gt;
+&lt;div class="blockquote"&gt; &amp;#8220;Quote via bootstrap class. Expedita odit velit incidunt nam quod sit ducimus!&amp;#8221;
+    &lt;div class="blockquote-footer"&gt; &amp;#8220;blockquoute footer &amp;#8220;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;Topic&amp;nbsp;tres&lt;/h2&gt;
+&lt;p&gt;What if we want get geeky and drop some code? 
+Still dont know how to get pygments&amp;nbsp;working:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;collections&lt;/span&gt;
+
+&lt;span class="n"&gt;logfile&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;yourlogfile.log&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;r&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="n"&gt;clean_log&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;[]&lt;/span&gt;
+
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;logfile&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="k"&gt;try&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="c1"&gt;# copy the URLS to an empty list.&lt;/span&gt;
+        &lt;span class="c1"&gt;# We get the part between GET and HTTP&lt;/span&gt;
+        &lt;span class="n"&gt;clean_log&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;GET&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;HTTP&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)])&lt;/span&gt;
+    &lt;span class="k"&gt;except&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="k"&gt;pass&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Hey what about putting something in that whitespace to the right. Is it&amp;nbsp;possible?&lt;/p&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam nemo laudantium, tempore earum incidunt temporibus eum, blanditiis quisquam dolorem maxime aperiam suscipit illum! Dolorum, officiis, possimus. Maxime repellendus ex&amp;nbsp;debitis!&lt;/p&gt;
+&lt;h2&gt;Tables and&amp;nbsp;stuff&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi dolore  perspiciatis distinctio dolorum voluptas accusantium minus rerum non.&amp;nbsp;Soluta.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Tables&lt;/th&gt;
+&lt;th align="center"&gt;Are&lt;/th&gt;
+&lt;th align="right"&gt;Cool&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;col 1 is&lt;/td&gt;
+&lt;td align="center"&gt;left-aligned&lt;/td&gt;
+&lt;td align="right"&gt;$1600&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;col 2 is&lt;/td&gt;
+&lt;td align="center"&gt;centered&lt;/td&gt;
+&lt;td align="right"&gt;$12&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;col 3 is&lt;/td&gt;
+&lt;td align="center"&gt;right-aligned&lt;/td&gt;
+&lt;td align="right"&gt;$1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</content></entry><entry><title>[Private] Hype</title><link href="/blog/hype.html" rel="alternate"></link><published>2017-07-01T00:00:00+02:00</published><updated>2017-07-01T00:00:00+02:00</updated><author><name>Sergio Badillo</name></author><id>tag:None,2017-07-01:/blog/hype.html</id><summary type="html">This content is encrypted.</summary><content type="html">&lt;div id="pec-encrypted-content" style="display:none"&gt;o7dTscvUf4QZCn8x9DPpQQ==;2Ix3xhC9f2srAAkiL5wUDsTAsHrYISE/i2OvHbQqwo6fC4TgqA0qslL/1YHMluf4mxeSAqJ+yF7HMuS5mbm/H8B95zX9iGRtRnhdw67XPu7tSR86EXUG38E3s5vs3MnEsE3g8breqA2FIXD1lQQ2pPnWT6wzjP6nk6uFJDcqap/SaZjGP78dxnp0Ow6sgFsCej1GQeCmKS4gWblf2u0vBiFH+WIw0GO0QbdfLwFFmm/QTL+B1qzZgRVrLheB+64Mv6/8QIFTQrTm8MKVwIIdMADcS/brQ3tzUdW2EkpIAY3GR74Ag6jRn+xTGDLWVHIJ6uqeSpkojgRP7uZSMyVVXw==;^&lt;/div&gt;
+&lt;div id="pec-decrypted-content"&gt;
+    &lt;h4&gt;&lt;i&gt;This content is encrypted.&lt;/i&gt;&lt;/h4&gt;
+&lt;/div&gt;
+
+&lt;form id="pec-decrypt-form"&gt;
+    &lt;label for="pec-content-password"&gt;Password&lt;/label&gt;
+    &lt;input type="password" id="pec-content-password" placeholder="Password" /&gt;
+    &lt;button type="button" id="pec-decrypt-content"&gt;Decrypt&lt;/button&gt;
+&lt;/form&gt;
+
+
+    &lt;script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/core.js"&gt;&lt;/script&gt;
+
+    &lt;script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/enc-base64.js"&gt;&lt;/script&gt;
+
+    &lt;script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/cipher-core.js"&gt;&lt;/script&gt;
+
+    &lt;script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/pad-nopadding.js"&gt;&lt;/script&gt;
+
+    &lt;script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/md5.js"&gt;&lt;/script&gt;
+
+    &lt;script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/aes.js"&gt;&lt;/script&gt;
+
+
+&lt;script type="text/javascript"&gt;
+    (function () {
+        var strip_padding = function (padded_content, padding_char) {
+            /*
+             * Strips the padding character from decrypted content.
+             */
+            for (var i = padded_content.length; i &gt; 0; i--) {
+                if (padded_content[i-1] !== padding_char) {
+                    return padded_content.slice(0, i);
+                }
+            }
+        };
+
+        var decrypt_content = function (password, iv_b64, ciphertext_b64, padding_char) {
+            /*
+             * Decrypts the content from the ciphertext bundle.
+             */
+            var key = CryptoJS.MD5(password),
+                iv = CryptoJS.enc.Base64.parse(iv_b64),
+                ciphertext = CryptoJS.enc.Base64.parse(ciphertext_b64),
+                bundle = {
+                    key: key,
+                    iv: iv,
+                    ciphertext: ciphertext
+                };
+
+            var plaintext = CryptoJS.AES.decrypt(bundle, key, {iv: iv, padding: CryptoJS.pad.NoPadding});
+
+            try {
+                return strip_padding(plaintext.toString(CryptoJS.enc.Utf8), padding_char);
+            }
+            catch (err) {
+                // encoding failed; wrong password
+                return false;
+            }
+        };
+
+        var init_decryptor = function() {
+            var decrypt_btn = document.getElementById('pec-decrypt-content'),
+                password_input = document.getElementById('pec-content-password'),
+                encrypted_content = document.getElementById('pec-encrypted-content'),
+                decrypted_content = document.getElementById('pec-decrypted-content'),
+                decrypt_form = document.getElementById('pec-decrypt-form');
+
+            decrypt_btn.addEventListener('click', function () {
+                // grab the ciphertext bundle
+                var parts = encrypted_content.innerHTML.split(';');
+
+                // decrypt it
+                var content = decrypt_content(
+                    password_input.value,
+                    parts[0],
+                    parts[1],
+                    parts[2]
+                );
+
+                if (content) {
+                    // success; display the decrypted content
+                    decrypted_content.innerHTML = content;
+                    decrypt_form.parentNode.removeChild(decrypt_form);
+                    encrypted_content.parentNode.removeChild(encrypted_content);
+
+                    // any post processing on the decrypted content should be done here
+                }
+                else {
+                    // ¯\_(ツ)_/¯
+                    password_input.value = '';
+                }
+            });
+        };
+
+        document.addEventListener('DOMContentLoaded', init_decryptor);
+    })();
+&lt;/script&gt;</content></entry><entry><title>Andrew Ng’s Machine Learning course</title><link href="/blog/andrew-ngs-machine-learning-course.html" rel="alternate"></link><published>2017-05-26T00:00:00+02:00</published><updated>2017-05-26T00:00:00+02:00</updated><author><name>Sergio Badillo</name></author><id>tag:None,2017-05-26:/blog/andrew-ngs-machine-learning-course.html</id><summary type="html">&lt;p&gt;Introductory machine learning&amp;nbsp;course.&lt;/p&gt;</summary><content type="html">&lt;p&gt;I started this awesome course on mid April 2017. I finished it at the end of May. It took me 1.5 months to go through all the material and solving the excercises. I chose this course as the first introduction to machine learning and I am pretty satisfied with it as it covered much of the basics of the subject, passing throught the most widespread techniques. The excercises provided were very fun to do as&amp;nbsp;well.&lt;/p&gt;</content></entry><entry><title>Books Solar Energy</title><link href="/blog/books-solar-energy.html" rel="alternate"></link><published>2017-05-17T00:00:00+02:00</published><updated>2017-05-17T00:00:00+02:00</updated><author><name>Sergio Badillo</name></author><id>tag:None,2017-05-17:/blog/books-solar-energy.html</id><summary type="html">&lt;p&gt;Some interesting sources out&amp;nbsp;there.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Some interesting sources out&amp;nbsp;there.&lt;/p&gt;
+&lt;p&gt;Solar Engineering of Thermal Processes by Duffie and Beckman. Good book for &lt;span class="caps"&gt;CSP&lt;/span&gt; and &lt;span class="caps"&gt;PV&lt;/span&gt; technology. Includes fundamentals of solar raiation, heat transfer, flat plate radiation, concentrating collectors, energy storage and solar process economics for &lt;span class="caps"&gt;CSP&lt;/span&gt; technologies.
+The &lt;span class="caps"&gt;PV&lt;/span&gt; section explains the design of photovoltaic systems, it also has a section for design&amp;nbsp;methods.&lt;/p&gt;
+&lt;p&gt;Photovoltaic Systems Engineering by Roger A. Messenger, Jerry Ventre. Offers a practical engineering basis for &lt;span class="caps"&gt;PV&lt;/span&gt; system design. It provides quick exposure to all system building blocks, then examines both the whys and hows of the electrical, mechanical, economic, and aesthetic aspects of &lt;span class="caps"&gt;PV&lt;/span&gt; system design-why certain designs are done in certain ways and how the design process is implemented. Aims to form a clear understanding of the parameters involved in &lt;span class="caps"&gt;PV&lt;/span&gt;&amp;nbsp;systems.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;the Photovoltaic Specialists Conferences that are held at approximately
+two-year intervals), reviews that have appeared in Advances in Solar Energy and elsewhere, and papers in scientific&amp;nbsp;journals.&lt;/p&gt;</content></entry></feed>

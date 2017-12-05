@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Explain to self - Solar</title><link href="/" rel="alternate"></link><link href="/feeds/solar.atom.xml" rel="self"></link><id>/</id><updated>2017-07-19T00:00:00+02:00</updated><entry><title>Does it makes sense?</title><link href="/blog/does-it-makes-sense.html" rel="alternate"></link><published>2017-07-19T00:00:00+02:00</published><updated>2017-07-19T00:00:00+02:00</updated><author><name>Sergio Badillo</name></author><id>tag:None,2017-07-19:/blog/does-it-makes-sense.html</id><summary type="html">&lt;p&gt;Does solar energy makes&amp;nbsp;sense?&lt;/p&gt;</summary><content type="html">&lt;p&gt;So I would like to start the solar energy series by answering in a simple way one of the questions I often hear myself. Isn&amp;#8217;t producing a solar cells as harmful as burning&amp;nbsp;fuels?&lt;/p&gt;
+&lt;p&gt;To answer the question, we will start by looking at a very simple concept called &lt;em&gt;Net Energy&lt;/em&gt;, and comparing different sources of&amp;nbsp;energy.&lt;/p&gt;
+&lt;h2&gt;Net&amp;nbsp;Energy&lt;/h2&gt;
+&lt;p&gt;Almost all energy sources, are not usable in their natural form. Take oil for example, before it can be delivered to our homes as electrical energy, it will have undergo an exploitation process. This exploitation process will include several stages needed to transform the source of energy to a usable form of&amp;nbsp;energy. &lt;/p&gt;
+&lt;p&gt;So let&amp;#8217;s say we would like to burn one barrel of oil, then we would have to consider the&amp;nbsp;stages:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Exploring and finding the&amp;nbsp;oil.&lt;/li&gt;
+&lt;li&gt;Extracting the&amp;nbsp;oil.&lt;/li&gt;
+&lt;li&gt;Transporting the&amp;nbsp;oil.&lt;/li&gt;
+&lt;li&gt;Refining the&amp;nbsp;oil.&lt;/li&gt;
+&lt;li&gt;Constructing the facility to burn the&amp;nbsp;oil.&lt;/li&gt;
+&lt;li&gt;Repairing environmental damage caused by all of the above (In principle, this should be&amp;nbsp;included).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Each of the stages above requires some energy to be completed. Here is where the concept of net energy comes into&amp;nbsp;consideration.&lt;/p&gt;
+&lt;div class="blockquote"&gt;
+Net Energy is the difference between the energy required to convert the source to useful energy and the actual useful energy obtained at the end.
+&lt;/div&gt;
+
+&lt;p&gt;We are not gonna dive into the numbers here, but hopefully you can get the idea. It takes more than one barrel of oil to obtain and convert the energy available in one barrel. In other words. Burning a barrel of oil has a negative net&amp;nbsp;energy. &lt;/p&gt;
+&lt;p&gt;From this simplistic point of view, we might wonder if that even makes sense to burn&amp;nbsp;oil.&lt;/p&gt;
+&lt;p&gt;Net energy was introduced by Odum and Odum in 1976. The idea proposed that everything has an energy content, and introduced the &lt;em&gt;British thermal unit&lt;/em&gt; (&lt;span class="caps"&gt;BTU&lt;/span&gt;) in order to measure and compare&amp;nbsp;it.&lt;/p&gt;
+&lt;h3&gt;What about solar cells&amp;nbsp;?&lt;/h3&gt;
+&lt;p&gt;Producing solar photovoltaic cells requires a significant amount of energy. But, over its lifetime, the solar cell will produce more energy than the energy required to create the cell itself. Using the sun as &lt;em&gt;infinite&lt;/em&gt; resource, the cell will create enough energy to compensate its own production energy costs, its own disposal costs, and still end-up with a positive energy&amp;nbsp;balance. &lt;/p&gt;
+&lt;p&gt;We should judge forms of energy by two&amp;nbsp;criteria:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Is it obtained from a renewable or non-renewable&amp;nbsp;source?  &lt;/li&gt;
+&lt;li&gt;Is the net energy value positive or&amp;nbsp;negative?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--
+
+Is the production of solar cells as harmful as some people claim?
+ We look into photovoltaic cell production externalities here.
+ --&gt;</content></entry><entry><title>Getting started with grid connected PV</title><link href="/blog/getting-started-with-grid-connected-pv.html" rel="alternate"></link><published>2017-05-29T00:00:00+02:00</published><updated>2017-05-29T00:00:00+02:00</updated><author><name>Sergio Badillo</name></author><id>tag:None,2017-05-29:/blog/getting-started-with-grid-connected-pv.html</id><summary type="html">&lt;p&gt;Running an analysis of a grid connected &lt;span class="caps"&gt;PV&lt;/span&gt;&amp;nbsp;system&lt;/p&gt;</summary><content type="html">&lt;!-- status: draft --&gt;
+
+&lt;p&gt;Grid-connected &lt;span class="caps"&gt;PV&lt;/span&gt; systems can be&amp;nbsp;divided: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Grid-connected with no battery backup (Also called &amp;#8216;straight&amp;nbsp;grid-connected&amp;#8217;)&lt;/li&gt;
+&lt;li&gt;Grid-connected with battery backup&lt;ul&gt;
+&lt;li&gt;dc-coupled&amp;nbsp;systems&lt;/li&gt;
+&lt;li&gt;ac-coupled&amp;nbsp;systems&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The most commonly installed systems are grid-connected systems. We will
+focus on this type of system for&amp;nbsp;now.&lt;/p&gt;
+&lt;h2&gt;Applicable Codes and Standards (In&amp;nbsp;France/Europe)&lt;/h2&gt;
+&lt;p&gt;Coming&amp;nbsp;soon.&lt;/p&gt;
+&lt;p&gt;We are looking here for general guidelines and requirements that
+guarantee safety of the end user, installer and maintenance&amp;nbsp;technician. &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sizes and types of switches, fuses, and wire to be&amp;nbsp;used.&lt;/li&gt;
+&lt;li&gt;Location of electrical components in the&amp;nbsp;systems.&lt;/li&gt;
+&lt;li&gt;Voltage Drop and wire&amp;nbsp;sizing.&lt;/li&gt;
+&lt;li&gt;Structural&amp;nbsp;Considerations&lt;/li&gt;
+&lt;li&gt;Proper use of switches, circuit breakers, fuses, types&amp;nbsp;of&lt;/li&gt;
+&lt;li&gt;Insulation and conductions, types of electrical conduit,&amp;nbsp;proper&lt;/li&gt;
+&lt;li&gt;Grounding&lt;/li&gt;
+&lt;li&gt;Other&lt;ul&gt;
+&lt;li&gt;Aesthetics&lt;/li&gt;
+&lt;li&gt;Electromagnetic&amp;nbsp;Interference&lt;/li&gt;
+&lt;li&gt;Surge&amp;nbsp;Protection&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Design&amp;nbsp;Considerations&lt;/h2&gt;
+&lt;p&gt;Ok let&amp;#8217;s jump straight determining the system energy&amp;nbsp;output.&lt;/p&gt;
+&lt;p&gt;Depending on the type of &lt;span class="caps"&gt;PV&lt;/span&gt; modules we will get certain module efficiency &lt;span class="math"&gt;\(\eta\)&lt;/span&gt; ranging from 6% to 20%. We can calculate a very vague approximation by utilizing an irradiance value at Standard Test Conditions (I_STC), which corresponds to a value of 1000W/m2. Our approximation starts at &lt;span class="math"&gt;\(\eta * 1000 W/m^2\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Lets consider we can get some modules with 12% rated efficiency. This means that each square meter of &lt;span class="caps"&gt;PV&lt;/span&gt; module will be generating 120 Watts, only of course if the modules will be operating all the time at standard test conditions and at their maximum power points. So for this example, if we would like to generate 10kW of power, we will require 10,0000W/(.12*1000W/m2) = 83.33m2 of &lt;span class="caps"&gt;PV&lt;/span&gt;&amp;nbsp;area.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Good things to know&lt;/em&gt;: What is a typical space available in a south-facing rooftop of a typical west-Europe&amp;nbsp;dwelling?&lt;/p&gt;
+&lt;p&gt;Until now, we have been talking about power (Watts), that is the instantaneous output of our system. Lets now talk &lt;strong&gt;energy&lt;/strong&gt;. We will like to know how any kilowatts-hours can the system be expected to generate. To answer that question we will have to go through some important factors what will help us understand what will be the conversion efficiency of our&amp;nbsp;system.&lt;/p&gt;
+&lt;p&gt;Starting from the inner technology of our modules, we already have a value of conversion (12%) in this case. In other words, what this value tells us is that the module is able to convert 12% of the incoming sunlight into electricity. But remember, this is just at module level. You may ask, what happens with the rest (82%) of the incoming sunlight? Well, a small part (about 4%) will just be reflected back and a big part will be absorbed, but not converted to energy, contributing to the heating of the&amp;nbsp;module.&lt;/p&gt;
+&lt;p&gt;Modules will be connected in subgroups, called arrays. For each array we can calculate the output power based on the number of modules and the efficiency of the modules. Then, on top of our array output power, we will have to account for other losses occurring in other part of our system.Commonly classified&amp;nbsp;into:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mismatch and soiling&amp;nbsp;losses:&lt;/li&gt;
+&lt;li&gt;Array temperature&amp;nbsp;losses&lt;/li&gt;
+&lt;li&gt;Inverter&amp;nbsp;losses&lt;/li&gt;
+&lt;li&gt;Wiring&amp;nbsp;losses&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;No two modules are the same, each module will have a difference in output to the others, this is called &lt;strong&gt;module mismatch&lt;/strong&gt;. When modules are combined into an array there will be losses due to the fact that the operating voltage and current will not be exactly the same for each module. We are putting soiling in the same category because dirty modules will also contribute to a mismatch loss in our array. The &lt;strong&gt;temperature&lt;/strong&gt; of the array will also decrease the efficiency of our modules. Our &lt;strong&gt;inverter&lt;/strong&gt;(s) will normally have an efficiency around 96%, meaning that we have an extra 4% loss of energy when converting from &lt;span class="caps"&gt;DC&lt;/span&gt; ot &lt;span class="caps"&gt;AC&lt;/span&gt;. Finally, some power will be lost in the &lt;strong&gt;wiring&lt;/strong&gt; components of our&amp;nbsp;system.&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content></entry></feed>

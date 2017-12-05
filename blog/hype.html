@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="english">
+<head>
+
+  <title>Explain to self</title>
+  <meta charset="utf-8" />
+
+  <!-- Ensure proper rending and touch zooming for all devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- A google font -->
+
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700|Ubuntu+Mono:400,700|Vollkorn:400,400i,700&amp;subset=latin-ext" rel="stylesheet">
+
+
+  <!-- latest concatenated css file -->
+  <link rel="stylesheet" href="/theme/css/main.css">
+  
+
+
+
+
+
+</head>
+
+<body>
+
+  <div class="fixed-top blog-masthead container-fluid">
+    <div class="container-fluid">
+      <nav class="nav blog-nav">   
+        <a class="nav-link" href="/">Home</a>
+
+
+        <a class="nav-link" href="/blog.html">Blog</a>
+
+
+
+        <a class="nav-link"  href="/pages/about.html">About</a>
+
+      </nav><!-- /#menu -->
+    </div>
+  </div>
+  
+  <header>
+    <div class="banner container-fluid">
+      <div class="container">
+
+        <div class="container">
+          <div class="site-name">Explain to self
+            <!-- <div class="lead subtitle">Sergio Badillo</div> -->
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="base-main" class="container-fluid">  
+    <!-- attention : ajax loads into this section section#base-main-->
+
+<section id="content" class="body">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9 ">
+
+        <footer class="post-info text-muted mb-2">
+          <time class="published" datetime="2017-07-01T00:00:00+02:00">
+            01 July 2017
+          </time>
+
+
+
+         <span>/ </span>
+
+         <span class="vcard author">
+          <a class="url fn" href="/author/sergio-badillo.html">Sergio Badillo</a>
+        </span>
+      </footer><!-- /.post-info -->
+
+      <header>
+        <h1 class="entry-title mb-4">
+          [Private] Hype
+        </h1>
+        
+      </header>
+
+
+      <div class="entry-content">
+        <div id="pec-encrypted-content" style="display:none">o7dTscvUf4QZCn8x9DPpQQ==;2Ix3xhC9f2srAAkiL5wUDsTAsHrYISE/i2OvHbQqwo6fC4TgqA0qslL/1YHMluf4mxeSAqJ+yF7HMuS5mbm/H8B95zX9iGRtRnhdw67XPu7tSR86EXUG38E3s5vs3MnEsE3g8breqA2FIXD1lQQ2pPnWT6wzjP6nk6uFJDcqap/SaZjGP78dxnp0Ow6sgFsCej1GQeCmKS4gWblf2u0vBiFH+WIw0GO0QbdfLwFFmm/QTL+B1qzZgRVrLheB+64Mv6/8QIFTQrTm8MKVwIIdMADcS/brQ3tzUdW2EkpIAY3GR74Ag6jRn+xTGDLWVHIJ6uqeSpkojgRP7uZSMyVVXw==;^</div>
+<div id="pec-decrypted-content">
+    <h4><i>This content is encrypted.</i></h4>
+</div>
+
+<form id="pec-decrypt-form">
+    <label for="pec-content-password">Password</label>
+    <input type="password" id="pec-content-password" placeholder="Password" />
+    <button type="button" id="pec-decrypt-content">Decrypt</button>
+</form>
+
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/core.js"></script>
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/enc-base64.js"></script>
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/cipher-core.js"></script>
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/pad-nopadding.js"></script>
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/md5.js"></script>
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/aes.js"></script>
+
+
+<script type="text/javascript">
+    (function () {
+        var strip_padding = function (padded_content, padding_char) {
+            /*
+             * Strips the padding character from decrypted content.
+             */
+            for (var i = padded_content.length; i > 0; i--) {
+                if (padded_content[i-1] !== padding_char) {
+                    return padded_content.slice(0, i);
+                }
+            }
+        };
+
+        var decrypt_content = function (password, iv_b64, ciphertext_b64, padding_char) {
+            /*
+             * Decrypts the content from the ciphertext bundle.
+             */
+            var key = CryptoJS.MD5(password),
+                iv = CryptoJS.enc.Base64.parse(iv_b64),
+                ciphertext = CryptoJS.enc.Base64.parse(ciphertext_b64),
+                bundle = {
+                    key: key,
+                    iv: iv,
+                    ciphertext: ciphertext
+                };
+
+            var plaintext = CryptoJS.AES.decrypt(bundle, key, {iv: iv, padding: CryptoJS.pad.NoPadding});
+
+            try {
+                return strip_padding(plaintext.toString(CryptoJS.enc.Utf8), padding_char);
+            }
+            catch (err) {
+                // encoding failed; wrong password
+                return false;
+            }
+        };
+
+        var init_decryptor = function() {
+            var decrypt_btn = document.getElementById('pec-decrypt-content'),
+                password_input = document.getElementById('pec-content-password'),
+                encrypted_content = document.getElementById('pec-encrypted-content'),
+                decrypted_content = document.getElementById('pec-decrypted-content'),
+                decrypt_form = document.getElementById('pec-decrypt-form');
+
+            decrypt_btn.addEventListener('click', function () {
+                // grab the ciphertext bundle
+                var parts = encrypted_content.innerHTML.split(';');
+
+                // decrypt it
+                var content = decrypt_content(
+                    password_input.value,
+                    parts[0],
+                    parts[1],
+                    parts[2]
+                );
+
+                if (content) {
+                    // success; display the decrypted content
+                    decrypted_content.innerHTML = content;
+                    decrypt_form.parentNode.removeChild(decrypt_form);
+                    encrypted_content.parentNode.removeChild(encrypted_content);
+
+                    // any post processing on the decrypted content should be done here
+                }
+                else {
+                    // ¯\_(ツ)_/¯
+                    password_input.value = '';
+                }
+            });
+        };
+
+        document.addEventListener('DOMContentLoaded', init_decryptor);
+    })();
+</script>
+      </div><!-- /.entry-content -->
+    </div><!-- /.column-md-9 -->
+  </div><!-- /.row -->
+</div>
+
+</section>
+
+  </section>
+
+
+
+
+  <footer id="contentinfo" class= "body">
+
+    <script type="text/javascript" src="/theme/js/vendor.js"></script>
+    <script type="text/javascript" src="/theme/js/own.js"></script>
+
+  </footer><!-- /#contentinfo -->
+
+</body>
+</html>

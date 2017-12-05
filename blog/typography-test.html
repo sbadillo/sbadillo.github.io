@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="english">
+<head>
+
+  <title>Explain to self</title>
+  <meta charset="utf-8" />
+
+  <!-- Ensure proper rending and touch zooming for all devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- A google font -->
+
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700|Ubuntu+Mono:400,700|Vollkorn:400,400i,700&amp;subset=latin-ext" rel="stylesheet">
+
+
+  <!-- latest concatenated css file -->
+  <link rel="stylesheet" href="/theme/css/main.css">
+  
+
+
+
+
+
+</head>
+
+<body>
+
+  <div class="fixed-top blog-masthead container-fluid">
+    <div class="container-fluid">
+      <nav class="nav blog-nav">   
+        <a class="nav-link" href="/">Home</a>
+
+
+        <a class="nav-link" href="/blog.html">Blog</a>
+
+
+
+        <a class="nav-link"  href="/pages/about.html">About</a>
+
+      </nav><!-- /#menu -->
+    </div>
+  </div>
+  
+  <header>
+    <div class="banner container-fluid">
+      <div class="container">
+
+        <div class="container">
+          <div class="site-name">Explain to self
+            <!-- <div class="lead subtitle">Sergio Badillo</div> -->
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="base-main" class="container-fluid">  
+    <!-- attention : ajax loads into this section section#base-main-->
+
+<section id="content" class="body">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9 ">
+
+        <footer class="post-info text-muted mb-2">
+          <time class="published" datetime="2017-07-19T00:00:00+02:00">
+            19 July 2017
+          </time>
+
+
+
+         <span>/ </span>
+
+         <span class="vcard author">
+          <a class="url fn" href="/author/sergio-badillo.html">Sergio Badillo</a>
+        </span>
+      </footer><!-- /.post-info -->
+
+      <header>
+        <h1 class="entry-title mb-4">
+          Typography&nbsp;Test
+        </h1>
+        
+      </header>
+
+
+      <div class="entry-content">
+        <p>Notes to self on getting the content right. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, ex corporis, maxime tempore eos veniam illo, ducimus quia rem, velit incidunt. Nemo dignissimos dicta repudiandae! Corporis exercitationem accusamus quas&nbsp;excepturi!</p>
+<h2>Topic&nbsp;1</h2>
+<p>So let&#8217;s say we are writing an article with subdivisions. I would like to keep things simple so it is important not to use to many headers, as the reader can easily get discouraged by&nbsp;complexity.</p>
+<p>A list&nbsp;example:</p>
+<ul>
+<li>Clean, lots white spaces on headers to make them&nbsp;clean</li>
+<li>Minimize number of subdivision. Max 2 header&nbsp;levels</li>
+<li>Use other formats instead of headers, like lists started by&nbsp;bolds.</li>
+<li>Figures managed via&nbsp;bootstrap</li>
+</ul>
+<h2>Topic&nbsp;dos</h2>
+<p>I will try to keep division up to this level. The main division of the article will be in h2&nbsp;headers.</p>
+<h3>2.1&nbsp;Subtopic</h3>
+<p>If more detail is needed. Then I can use another subdivision like this, this is an h3. Id fugiat assumenda consectetur a cupiditate accusantium quibusdam inventore perspiciatis! Maybe we drop a small figure&nbsp;here:</p>
+<figure class="figure" style="max-width: 200px;">
+    <img class="figure-img img-fluid" src="../images/american-colombo.jpg">
+    <div class="figure-caption text-center">American Colombo</div>
+</figure>
+
+<h3>2.2&nbsp;Subtopic</h3>
+<p>This is another h3 subdivision. Let&#8217;s add a quote over&nbsp;here.</p>
+<div class="blockquote"> &#8220;Quote via bootstrap class. Expedita odit velit incidunt nam quod sit ducimus!&#8221;
+    <div class="blockquote-footer"> &#8220;blockquoute footer &#8220;</div>
+</div>
+
+<h2>Topic&nbsp;tres</h2>
+<p>What if we want get geeky and drop some code? 
+Still dont know how to get pygments&nbsp;working:</p>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">collections</span>
+
+<span class="n">logfile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;yourlogfile.log&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span>
+
+<span class="n">clean_log</span><span class="o">=</span><span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">logfile</span><span class="p">:</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># copy the URLS to an empty list.</span>
+        <span class="c1"># We get the part between GET and HTTP</span>
+        <span class="n">clean_log</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">line</span><span class="p">[</span><span class="n">line</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&quot;GET&quot;</span><span class="p">)</span><span class="o">+</span><span class="mi">4</span><span class="p">:</span><span class="n">line</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&quot;HTTP&quot;</span><span class="p">)])</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="k">pass</span>
+</pre></div>
+
+
+<p>Hey what about putting something in that whitespace to the right. Is it&nbsp;possible?</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam nemo laudantium, tempore earum incidunt temporibus eum, blanditiis quisquam dolorem maxime aperiam suscipit illum! Dolorum, officiis, possimus. Maxime repellendus ex&nbsp;debitis!</p>
+<h2>Tables and&nbsp;stuff</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi dolore  perspiciatis distinctio dolorum voluptas accusantium minus rerum non.&nbsp;Soluta.</p>
+<table>
+<thead>
+<tr>
+<th>Tables</th>
+<th align="center">Are</th>
+<th align="right">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>col 1 is</td>
+<td align="center">left-aligned</td>
+<td align="right">$1600</td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td align="center">centered</td>
+<td align="right">$12</td>
+</tr>
+<tr>
+<td>col 3 is</td>
+<td align="center">right-aligned</td>
+<td align="right">$1</td>
+</tr>
+</tbody>
+</table>
+      </div><!-- /.entry-content -->
+    </div><!-- /.column-md-9 -->
+  </div><!-- /.row -->
+</div>
+
+</section>
+
+  </section>
+
+
+
+
+  <footer id="contentinfo" class= "body">
+
+    <script type="text/javascript" src="/theme/js/vendor.js"></script>
+    <script type="text/javascript" src="/theme/js/own.js"></script>
+
+  </footer><!-- /#contentinfo -->
+
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="english">
+<head>
+
+  <title>Explain to self</title>
+  <meta charset="utf-8" />
+
+  <!-- Ensure proper rending and touch zooming for all devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- A google font -->
+
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700|Ubuntu+Mono:400,700|Vollkorn:400,400i,700&amp;subset=latin-ext" rel="stylesheet">
+
+
+  <!-- latest concatenated css file -->
+  <link rel="stylesheet" href="/theme/css/main.css">
+  
+
+
+
+
+
+</head>
+
+<body>
+
+  <div class="fixed-top blog-masthead container-fluid">
+    <div class="container-fluid">
+      <nav class="nav blog-nav">   
+        <a class="nav-link" href="/">Home</a>
+
+
+        <a class="nav-link" href="/blog.html">Blog</a>
+
+
+
+        <a class="nav-link"  href="/pages/about.html">About</a>
+
+      </nav><!-- /#menu -->
+    </div>
+  </div>
+  
+  <header>
+    <div class="banner container-fluid">
+      <div class="container">
+
+        <div class="container">
+          <div class="site-name">Explain to self
+            <!-- <div class="lead subtitle">Sergio Badillo</div> -->
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="base-main" class="container-fluid">  
+    <!-- attention : ajax loads into this section section#base-main-->
+
+<section id="content" class="body">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9 ">
+
+        <footer class="post-info text-muted mb-2">
+          <time class="published" datetime="2017-05-29T00:00:00+02:00">
+            29 May 2017
+          </time>
+
+
+
+         <span>/ </span>
+
+         <span class="vcard author">
+          <a class="url fn" href="/author/sergio-badillo.html">Sergio Badillo</a>
+        </span>
+      </footer><!-- /.post-info -->
+
+      <header>
+        <h1 class="entry-title mb-4">
+          Getting started with grid connected <span class="caps">PV</span>
+        </h1>
+        
+      </header>
+
+
+      <div class="entry-content">
+        <!-- status: draft -->
+
+<p>Grid-connected <span class="caps">PV</span> systems can be&nbsp;divided: </p>
+<ul>
+<li>Grid-connected with no battery backup (Also called &#8216;straight&nbsp;grid-connected&#8217;)</li>
+<li>Grid-connected with battery backup<ul>
+<li>dc-coupled&nbsp;systems</li>
+<li>ac-coupled&nbsp;systems</li>
+</ul>
+</li>
+</ul>
+<p>The most commonly installed systems are grid-connected systems. We will
+focus on this type of system for&nbsp;now.</p>
+<h2>Applicable Codes and Standards (In&nbsp;France/Europe)</h2>
+<p>Coming&nbsp;soon.</p>
+<p>We are looking here for general guidelines and requirements that
+guarantee safety of the end user, installer and maintenance&nbsp;technician. </p>
+<ul>
+<li>Sizes and types of switches, fuses, and wire to be&nbsp;used.</li>
+<li>Location of electrical components in the&nbsp;systems.</li>
+<li>Voltage Drop and wire&nbsp;sizing.</li>
+<li>Structural&nbsp;Considerations</li>
+<li>Proper use of switches, circuit breakers, fuses, types&nbsp;of</li>
+<li>Insulation and conductions, types of electrical conduit,&nbsp;proper</li>
+<li>Grounding</li>
+<li>Other<ul>
+<li>Aesthetics</li>
+<li>Electromagnetic&nbsp;Interference</li>
+<li>Surge&nbsp;Protection</li>
+</ul>
+</li>
+</ul>
+<h2>Design&nbsp;Considerations</h2>
+<p>Ok let&#8217;s jump straight determining the system energy&nbsp;output.</p>
+<p>Depending on the type of <span class="caps">PV</span> modules we will get certain module efficiency <span class="math">\(\eta\)</span> ranging from 6% to 20%. We can calculate a very vague approximation by utilizing an irradiance value at Standard Test Conditions (I_STC), which corresponds to a value of 1000W/m2. Our approximation starts at <span class="math">\(\eta * 1000 W/m^2\)</span>.</p>
+<p>Lets consider we can get some modules with 12% rated efficiency. This means that each square meter of <span class="caps">PV</span> module will be generating 120 Watts, only of course if the modules will be operating all the time at standard test conditions and at their maximum power points. So for this example, if we would like to generate 10kW of power, we will require 10,0000W/(.12*1000W/m2) = 83.33m2 of <span class="caps">PV</span>&nbsp;area.</p>
+<p><em>Good things to know</em>: What is a typical space available in a south-facing rooftop of a typical west-Europe&nbsp;dwelling?</p>
+<p>Until now, we have been talking about power (Watts), that is the instantaneous output of our system. Lets now talk <strong>energy</strong>. We will like to know how any kilowatts-hours can the system be expected to generate. To answer that question we will have to go through some important factors what will help us understand what will be the conversion efficiency of our&nbsp;system.</p>
+<p>Starting from the inner technology of our modules, we already have a value of conversion (12%) in this case. In other words, what this value tells us is that the module is able to convert 12% of the incoming sunlight into electricity. But remember, this is just at module level. You may ask, what happens with the rest (82%) of the incoming sunlight? Well, a small part (about 4%) will just be reflected back and a big part will be absorbed, but not converted to energy, contributing to the heating of the&nbsp;module.</p>
+<p>Modules will be connected in subgroups, called arrays. For each array we can calculate the output power based on the number of modules and the efficiency of the modules. Then, on top of our array output power, we will have to account for other losses occurring in other part of our system.Commonly classified&nbsp;into:</p>
+<ul>
+<li>Mismatch and soiling&nbsp;losses:</li>
+<li>Array temperature&nbsp;losses</li>
+<li>Inverter&nbsp;losses</li>
+<li>Wiring&nbsp;losses</li>
+</ul>
+<p>No two modules are the same, each module will have a difference in output to the others, this is called <strong>module mismatch</strong>. When modules are combined into an array there will be losses due to the fact that the operating voltage and current will not be exactly the same for each module. We are putting soiling in the same category because dirty modules will also contribute to a mismatch loss in our array. The <strong>temperature</strong> of the array will also decrease the efficiency of our modules. Our <strong>inverter</strong>(s) will normally have an efficiency around 96%, meaning that we have an extra 4% loss of energy when converting from <span class="caps">DC</span> ot <span class="caps">AC</span>. Finally, some power will be lost in the <strong>wiring</strong> components of our&nbsp;system.</p>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+      </div><!-- /.entry-content -->
+    </div><!-- /.column-md-9 -->
+  </div><!-- /.row -->
+</div>
+
+</section>
+
+  </section>
+
+
+
+
+  <footer id="contentinfo" class= "body">
+
+    <script type="text/javascript" src="/theme/js/vendor.js"></script>
+    <script type="text/javascript" src="/theme/js/own.js"></script>
+
+  </footer><!-- /#contentinfo -->
+
+</body>
+</html>
